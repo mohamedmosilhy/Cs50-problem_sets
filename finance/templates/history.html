@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <td style="width:25%">Symbol</td>
+                <td style="width:25%">Shares</td>
+                <td style="width:25%">Price</td>
+                <td style="width:25%">Time</td>
+            </tr>
+        </thead>
+        <tbody>
+            {%if  history%}
+            {%for row in history%}
+            <tr>
+                <td>{{row["symbol"] |upper}}</td>
+                <td>{{row["shares"]}}</td>
+                <td>{{row["price"] | usd}}</td>
+                <td>{{row["time"]}}</td>
+            </tr>
+            {%endfor%}
+            {%endif%}
+        </tbody>
+    </table>
+{% endblock %}

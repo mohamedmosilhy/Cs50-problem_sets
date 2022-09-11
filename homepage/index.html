@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arabic takht</title>
+        <link rel="stylesheet" href="mycss.css">
+    </head>
+    <body>
+        <div class="firstbox">
+
+            <h1>The Traditional Arab Ensemble </h1>
+            <p>
+            The traditional Arab ensemble is known as "takht" (literally meaning “bed” in Arabic).The composition of the ensemble may<br>
+            vary,but it is typically composed of the following six melodic instruments: the oud, qanun, nay, kamanja, riq, and darbuka".<br>
+            The ensemble may be joined by male or female vocalists. The takht ensemble employs the use of quarter tones in addition<br>
+            to whole and semi-tones,which gives the takht its unique and melodramatic sounds.<br>
+            </p>
+
+        <p class="first">please choose the musical instrument you want to know more about.</p>
+        </div>
+        <div class="sidemenu column">
+            <ul>
+                <li><a href="oud.html">oud</a></li>
+                <li><a href="qanun.html">qanun</a></li>
+                <li><a href="nay.html">nay</a></li>
+                <li><a href="kamanja.html">kamanja</a></li>
+                <li><a href="riq.html">riq</a></li>
+                <li><a href="darbuka.html">darbuka</a></li>
+            </ul>
+            <div>
+                Name: <input type="text" id="name" placeholder="Name" style="height:30px;">
+                <button name="submit" class="form" onclick="myFunction()">submit</button>
+                <p id="demo"></p>
+                <hr>
+                <p>click on the color which you want for the background color.</p>
+                <button class="form" id="powderblue">powderblue</button>
+                <button class="form" id="red">red</button>
+            </div>
+            <script>
+                function myFunction(){
+                    var name1 = document.getElementById("name").value;
+                    document.getElementById("demo").innerHTML="hello "+  name1;
+                }
+                let x = document.getElementById("powderblue");
+                let y = document.getElementById("red");
+                x.addEventListener('click', function(){document.body.style.backgroundColor="powderblue"});
+                y.addEventListener('click', function(){document.body.style.backgroundColor="red"}); 
+            </script>   
+        </div>
+        <div>
+            <img src="QFI_Infographic_Music_Final.jpg" alt=" arabic takht" class="main" sizes="(max-width: 600px) 200px, 50vw">
+        </div>
+    </body>
+</html>

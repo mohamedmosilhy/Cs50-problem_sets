@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: because bubble sort has the lowest running time in the best case (sorted) big omega of n
+
+sort2 uses: merge sort
+
+How do you know?: because in the cases of (random and reversed) it has the lowest running time as it has big o notation of (n*log(n))
+
+sort3 uses: selection sort
+
+How do you know?: because in the sorted case it has the biggest running time as it has big omege of (n^2) which is the biggest in the 3 cases

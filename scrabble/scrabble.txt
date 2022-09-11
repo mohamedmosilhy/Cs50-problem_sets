@@ -1,0 +1,16 @@
+get the two words from the user
+call the function compute_score
+change the two words to the lower case
+FOR (int i = 0 ; i < n ; i++)
+    IF (word1[i] <= 'z' and word1[i] >= 'a' ) THEN
+        location = word1[i] - 96
+        sum = sum + points[location]
+return sum
+IF (sum1>sum2) THEN
+PRINT Player 1 wins!
+ELSE IF sum1=sum2
+PRINT Tie!
+ELSE
+PRINT Player 2 wins!
+
+    
